@@ -2,7 +2,7 @@ import sys
 from stats import get_num_words, get_chars_dict, get_chars_report
 
 def get_book_text(path):
-    with open(path) as f:
+    with open(path, encoding='utf-8') as f:
         return f.read()
 
 def main():
